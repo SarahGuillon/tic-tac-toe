@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Table from "./Table";
 import Form from "./Form";
+import FilterableProductTable from './FilterableProductTable';
 
 class App extends Component {
   state = {
@@ -29,8 +30,11 @@ class App extends Component {
 
     return (
       <div className="container">
+        <h1>First Exercice</h1>
         <Table characterData={this.state.characters} handleDelete={this.handleDelete}/>
         <Form addCharacters={this.handleSubmit}/>
+        <h1>Second Exercice</h1>
+        <FilterableProductTable/>
       </div>
     )
   }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@800&family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 }
 
 code {
@@ -60,7 +63,6 @@ form {
 }
 
 [type='button'] {
-  font-weight: 600;
   background: #0366ee;
   color: #ffffff;
   font-size: 1rem;
@@ -69,10 +71,11 @@ form {
   cursor: pointer;
   width: 30%;
   padding: 0.75rem 1.25rem;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
 }
 
 button  {
-  font-weight: 600;
   background: #0366ee;
   color: #ffffff;
   border: 1px solid #0366ee;
@@ -80,10 +83,24 @@ button  {
   cursor: pointer;
   padding: 0.4rem 1rem;
   border-radius: 4px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
 }
 
 button:hover, [type='button']:hover {
   border: 1px solid #0250bc;
   background: #0250bc;
   text-decoration: none;
+}
+
+.checkbox {
+  display: flex;
+}
+.checkbox input {
+  width: 10%;
+}
+
+h1 {
+  margin-bottom: 60px;
+  margin-top: 80px;
 }
