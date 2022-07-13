@@ -97,7 +97,9 @@ button:hover, [type='button']:hover {
   display: flex;
 }
 .checkbox input {
-  width: 10%;
+  width: 20px;
+  align-items: center;
+  margin: 0 10px 0 0;
 }
 
 h1 {
