@@ -46,15 +46,15 @@ class CategoryRow extends Component {
 
 class ProductTable extends Component {
   render() {
+    const filterText = this.props.filterText;
+    const inStockOnly = this.props.inStockOnly;
     let lastCategory = null;
     const rows = [];
-    // const filterText = this.props.filterText;
-    const inStockOnly = this.props.inStockOnly;
 
     this.props.products.forEach((product) => {
-      // if (product.name.indexOf(filterText) === -1) {
-      //   return;
-      // }
+      if (product.name.indexOf(filterText) === -1) {
+        return;
+      }
       if (inStockOnly && !product.stocked) {
         return;
       }
@@ -143,7 +143,7 @@ class FilterableProductTable extends Component {
     return (
       <div className="filter-product-table">
         <SearchBar filterText={this.state.filterText} inStockOnly={this.state.inStockOnly} onFilterTextChange={this.handleFilterTextChange} onInStockChange={this.handleInStockChange} />
-        <ProductTable products={PRODUCTS}/>
+        <ProductTable products={PRODUCTS} filterText={this.state.filterText} inStockOnly={this.state.inStockOnly}/>
       </div>
     )
   }
