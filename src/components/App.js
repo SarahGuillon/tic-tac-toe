@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Table from "./Table";
+import Game from "./Game"
 import Form from "./Form";
 import FilterableProductTable from './FilterableProductTable';
 
@@ -35,6 +36,8 @@ class App extends Component {
         <Form addCharacters={this.handleSubmit}/>
         <h1>Second Exercice</h1>
         <FilterableProductTable/>
+        <h1>Third Exercice</h1>
+        <Game/>
       </div>
     )
   }
